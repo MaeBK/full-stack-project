@@ -59,46 +59,48 @@ const App = () => {
 
   return (
     <container className="favContainer">
-    <div id="todo-list">
-      <h1 className="listText">Favorites</h1>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
-        />
-        <button type="submit">Add Restaurant</button>
-      </form>
-      {todos.map((todo) => (
-        <div key={todo.id} className="todo">
-          <div className="todo-text">
-            <input
-              type="checkbox"
-              id="completed"
-              checked={todo.completed}
-              onChange={() => toggleComplete(todo.id)}
-            />
-            {todo.id === todoEditing ? (
+      <div id="todo-list">
+        <h1 className="listText">Favorites</h1>
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            onChange={(e) => setTodo(e.target.value)}
+            value={todo}
+          />
+          <button type="submit">Add Restaurant</button>
+        </form>
+        {todos.map((todo) => (
+          <div key={todo.id} className="todo">
+            <div className="todo-text">
               <input
-                type="text"
-                onChange={(e) => setEditingText(e.target.value)}
+                type="checkbox"
+                id="completed"
+                checked={todo.completed}
+                onChange={() => toggleComplete(todo.id)}
               />
-            ) : (
-              <div>{todo.text}</div>
-            )}
-          </div>
-          <div className="todo-actions">
-            {todo.id === todoEditing ? (
-              <button onClick={() => submitEdits(todo.id)}>Submit Edits</button>
-            ) : (
-              <button onClick={() => setTodoEditing(todo.id)}>Change</button>
-            )}
+              {todo.id === todoEditing ? (
+                <input
+                  type="text"
+                  onChange={(e) => setEditingText(e.target.value)}
+                />
+              ) : (
+                <div>{todo.text}</div>
+              )}
+            </div>
+            <div className="todo-actions">
+              {todo.id === todoEditing ? (
+                <button onClick={() => submitEdits(todo.id)}>
+                  Submit Edits
+                </button>
+              ) : (
+                <button onClick={() => setTodoEditing(todo.id)}>Change</button>
+              )}
 
-            <button onClick={() => deleteTodo(todo.id)}>Remove</button>
+              <button onClick={() => deleteTodo(todo.id)}>Remove</button>
+            </div>
           </div>
-        </div>
-      ))}
-    </div>
+        ))}
+      </div>
     </container>
   );
 };

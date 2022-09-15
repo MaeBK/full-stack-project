@@ -1,31 +1,35 @@
-.App {
-  text-align: center;
-}
 * {
 	font-family: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: #C4A8FF;
 }
 /*----------------------------------Navbar-------------------------*/
 .nav li {
 	list-style: none;
 	padding: 10px;
+  color: #C4A8FF;
 }
-
 .nav li a {
 	text-decoration: none;
-	color: #1A0554;
+	color: #C4A8FF;
 	font-size: larger;
 }
-
 .nav {
-	background-color: #C4A8FF;
-  margin: 0;
-  padding: 0;
+  background: url(https://wallpapercave.com/wp/wp3504566.jpg);
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
 }
-
 .navHome {
-	display: grid;
-	grid-template-columns: 33% 33% 33%;
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 	text-align: center;
+  margin: 0px;
 }
 
 /*-----------------------------Home-------------------------*/
@@ -36,12 +40,6 @@ iframe {
 }
 
 /*----------------------------Friends/Fav---------------------------*/
-.friendContainer {
-  background: url(https://img.freepik.com/free-vector/watercolor-purple-outer-space-background_23-2149247755.jpg) no-repeat;
-}
-.favContainer {
-  background: url(https://img.freepik.com/free-vector/watercolor-purple-outer-space-background_23-2149247755.jpg) no-repeat;
-}
 .listText {
   text-align: center;
 }
@@ -50,7 +48,6 @@ iframe {
   margin: 60px auto;
 }
 form, .todo {
-  border: 1px solid grey;
   padding: 10px 20px;
   margin-bottom: 10px;
 }
@@ -68,10 +65,9 @@ form input {
   display: flex;
   flex-direction: column;
 }
-
 button {
   font-size: 16px;
-  background-color: rgb(217, 60, 35);
+  background-color:#1A0554;
   color: #fff;
   border-radius: 8px;
   border: none;
@@ -79,10 +75,10 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background-color: rgb(173, 47, 28);
+  background-color: #0C0B13;
 }
 button:active {
-  background-color: rgb(130,35,21);
+  background-color: #0C0B13;
 }
 button:focus {
   outline: 0;
@@ -115,11 +111,10 @@ input[type='text'] { font-size: 20px; font-family: monospace; }
 /*--------------------------------------Footer------------------------------------------*/
 footer {
   width: 100%;
-  background-color: #f8f3f3;
-  color: rgb(11, 10, 10);
+  background: url(https://wallpapercave.com/wp/wp3504566.jpg);
+  color: #C4A8FF;
   padding: 2rem 0;
 }
-
 .footer-wrapper {
   max-width: 1440px;
   margin: 0 auto;
@@ -130,19 +125,14 @@ footer {
 
   border-bottom: 2px solid #fff;
 }
-
 .footer-col {
   width: 33%;
 }
-
 .footer-col {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-
-  gap: 1rem;
-
   margin: 0;
   padding: 0;
 }
