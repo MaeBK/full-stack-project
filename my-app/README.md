@@ -10,4 +10,4 @@ What we have here are the basics to show we know what we're doing, it's been rou
 
 Frontend - Amplify ("main" branch)
 
-[Working Site](https://main-working.digong0psevux.amplifyapp.com/Home)
+[Working Site]([https://main-working.digong0psevux.amplifyapp.com/Home](https://main.d3ss8gtjr3ac3s.amplifyapp.com/))
