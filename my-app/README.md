@@ -13,3 +13,5 @@ Frontend - Amplify ("main" branch)
 Coded in VS Code, and Made with React
 
 [Working Site](https://main.d3ss8gtjr3ac3s.amplifyapp.com/)
+
+[Wireframe](https://www.figma.com/file/hiSaRwsQK3q3wDnn2RseJt/Untitled?node-id=0%3A1)
