@@ -36,7 +36,14 @@ body {
 
 iframe {
 	height: 500px;
-	width: 100%;
+  margin-left: 12%;
+	width: 75%;
+  border-radius: 25px;
+}
+.home {
+  background: url(https://wallpapercave.com/wp/wp3504566.jpg);
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*----------------------------Friends/Fav---------------------------*/
@@ -46,6 +53,9 @@ iframe {
 #todo-list {
   width: 500px;
   margin: 60px auto;
+  /* border: 1px solid #0C0B13; */
+  border-radius: 25px;
+  background-color:rgba(255, 255, 255, 0.3);
 }
 form, .todo {
   padding: 10px 20px;
@@ -60,10 +70,13 @@ form input {
   padding: 4px 8px;
   flex-grow: 1;
   margin-right: 16px;
+  border-radius: 25px;
 }
 .todo {
   display: flex;
   flex-direction: column;
+  border: 1px solid #0C0B13;
+  border-radius: 25px;
 }
 button {
   font-size: 16px;
