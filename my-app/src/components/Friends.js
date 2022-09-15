@@ -95,6 +95,7 @@ const App = () => {
           </div>
         ))}
       </div>
+      <img className="maeDoodle" src='https://cdn.discordapp.com/attachments/923491339818131456/1020052676496605284/MaeFriends.png' alt="Mae Favorites" width='300px'/>
     </container>
   );
 };

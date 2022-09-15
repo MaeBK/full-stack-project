@@ -47,6 +47,10 @@ iframe {
 }
 
 /*----------------------------Friends/Fav---------------------------*/
+.containerFav{
+  display: flex;
+  flex-direction: row;
+}
 .listText {
   text-align: center;
 }

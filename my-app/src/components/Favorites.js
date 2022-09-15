@@ -58,7 +58,8 @@ const App = () => {
   }
 
   return (
-    <container className="favContainer">
+    <div className="continerFav">
+            <img className="maeDoodle" src='https://cdn.discordapp.com/attachments/923491339818131456/1020052676173627402/MaeFav.png' alt="Mae Favorites" width='300px'/>
       <div id="todo-list">
         <h1 className="listText">Favorites</h1>
         <form onSubmit={handleSubmit}>
@@ -101,7 +102,7 @@ const App = () => {
           </div>
         ))}
       </div>
-    </container>
+    </div>
   );
 };
 
